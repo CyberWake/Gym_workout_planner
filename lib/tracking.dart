@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class Dashboard extends StatefulWidget {
+class Tracking extends StatefulWidget {
   @override
-  _DashboardState createState() => _DashboardState();
+  _TrackingState createState() => _TrackingState();
 }
 
-class _DashboardState extends State<Dashboard> {
+class _TrackingState extends State<Tracking> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -97,48 +97,6 @@ class _DashboardState extends State<Dashboard> {
             ),
           )
         ],
-      ),
-      drawer: Drawer(
-          child: Column(
-              children: <Widget>[
-                UserAccountsDrawerHeader(
-                  accountEmail: Text("ritikfbd@gmail.com"),
-                  accountName: Text("Ritik Kumar Srivastava"),
-                  currentAccountPicture: CircleAvatar(
-                    backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/44184786?s=460&v=4"),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 20),
-                ),
-                ListTile(
-                  leading: Icon(MdiIcons.yoga, size: 40),
-                  title: Text("Exercise"),
-                ),
-                ListTile(
-                  leading: Icon(MdiIcons.chartLine, size: 40),
-                  title: Text("Track"),
-                  trailing: Chip(
-                    label: Text("2",style: TextStyle(fontWeight: FontWeight.bold),),
-                    backgroundColor: Theme.of(context).primaryColor,
-                  ),
-                ),
-                ListTile(
-                  leading: FaIcon(FontAwesomeIcons.user, size: 38),
-                  title: Text("Account"),
-                ),
-                Divider(),
-                Expanded(
-                  child: Align(
-                    alignment: FractionalOffset.bottomCenter,
-                    child: ListTile(
-                      leading:FaIcon(FontAwesomeIcons.cog, size: 40),
-                      title: Text("Setting"),
-                    ),
-                  ),
-                )
-              ]
-          )
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -421,6 +379,64 @@ class _DashboardState extends State<Dashboard> {
             ),
           ),
         ),
+      ),
+      drawer: Drawer(
+          child: Column(
+              children: <Widget>[
+                UserAccountsDrawerHeader(
+                  accountEmail: Text("ritikfbd@gmail.com"),
+                  accountName: Text("Ritik Kumar Srivastava"),
+                  currentAccountPicture: CircleAvatar(
+                    backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/44184786?s=460&v=4"),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 20),
+                ),
+                ListTile(
+                  leading: Icon(MdiIcons.yoga, size: 40),
+                  title: Text("Exercise"),
+                  onTap: (){
+                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/exercise');
+                  },
+                ),
+                ListTile(
+                  leading: Icon(MdiIcons.chartLine, size: 40),
+                  title: Text("Track"),
+                  trailing: Chip(
+                    label: Text("2",style: TextStyle(fontWeight: FontWeight.bold),),
+                    backgroundColor: Theme.of(context).primaryColor,
+                  ),
+                  onTap: (){
+                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/tracking');
+                  },
+                ),
+                ListTile(
+                  leading: FaIcon(FontAwesomeIcons.user, size: 38),
+                  title: Text("Account"),
+                  onTap: (){
+                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/me');
+                  },
+                ),
+                Divider(),
+                Expanded(
+                  child: Align(
+                    alignment: FractionalOffset.bottomCenter,
+                    child: ListTile(
+                      leading:FaIcon(FontAwesomeIcons.cog, size: 40),
+                      title: Text("Setting"),
+                      onTap: (){
+                        Navigator.pop(context);
+                        Navigator.pushNamed(context, '/welcome');
+                      },
+                    ),
+                  ),
+                )
+              ]
+          )
       ),
       bottomNavigationBar: CurvedNavigationBar(
           backgroundColor: Theme.of(context).primaryColor,

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'tracking.dart';
 
 class Welcome extends StatefulWidget {
@@ -58,12 +57,8 @@ class _WelcomeState extends State<Welcome> {
                 ),
                 MaterialButton(
                   onPressed: () {
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Dashboard(),
-                      ),
-                    );
+                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/exercise');
                   },
                   minWidth: double.infinity,
                   height: 50,
