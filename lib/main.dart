@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'exercise.dart';
 import 'tracking.dart';
 import 'me.dart';
-import 'welcome.dart';
+import 'loginscreen.dart';
 
 void main() => runApp(MyApp());
 
@@ -18,11 +16,9 @@ class MyApp extends StatelessWidget {
           accentColor: Color(0XFF233C63),
           fontFamily: 'Poppins',
         ),
-        home:Scaffold(
-        ),
-      initialRoute:'/welcome',
+      home: LoginScreen(),
       routes:{
-        '/welcome':(context) => Welcome(),
+        LoginScreen.routeName: (context) => LoginScreen(),
         '/exercise':(context) => Exercise(),
         '/tracking':(context) => Tracking(),
         '/me':(context) => Me(),

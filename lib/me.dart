@@ -22,8 +22,20 @@ class _MeState extends State<Me>{
           child: Column(
               children: <Widget>[
                 UserAccountsDrawerHeader(
-                  accountEmail: Text("ritikfbd@gmail.com"),
-                  accountName: Text("Ritik Kumar Srivastava"),
+                  accountEmail:
+                  Text("ritikfbd@gmail.com",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  accountName:
+                  Text("Ritik Kumar Srivastava",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   currentAccountPicture: CircleAvatar(
                     backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/44184786?s=460&v=4"),
                   ),
@@ -33,7 +45,11 @@ class _MeState extends State<Me>{
                 ),
                 ListTile(
                   leading: Icon(MdiIcons.yoga, size: 40),
-                  title: Text("Exercise"),
+                  title: Text("Exercise",style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  ),
                   onTap: (){
                     Navigator.pop(context);
                     Navigator.pushNamed(context, '/exercise');
@@ -41,7 +57,12 @@ class _MeState extends State<Me>{
                 ),
                 ListTile(
                   leading: Icon(MdiIcons.chartLine, size: 40),
-                  title: Text("Track"),
+                  title:
+                  Text("Track",style: TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  ),
                   trailing: Chip(
                     label: Text("2",style: TextStyle(fontWeight: FontWeight.bold),),
                     backgroundColor: Theme.of(context).primaryColor,
@@ -53,7 +74,12 @@ class _MeState extends State<Me>{
                 ),
                 ListTile(
                   leading: FaIcon(FontAwesomeIcons.user, size: 38),
-                  title: Text("Account"),
+                  title: Text("Account",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   onTap: (){
                     Navigator.pop(context);
                     Navigator.pushNamed(context, '/me');
@@ -65,7 +91,12 @@ class _MeState extends State<Me>{
                     alignment: FractionalOffset.bottomCenter,
                     child: ListTile(
                       leading:FaIcon(FontAwesomeIcons.cog, size: 40),
-                      title: Text("Setting"),
+                      title: Text("Setting",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       onTap: (){
                         Navigator.pop(context);
                         Navigator.pushNamed(context, '/welcome');
