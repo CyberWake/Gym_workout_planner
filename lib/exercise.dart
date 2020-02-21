@@ -13,8 +13,7 @@ class _ExerciseState extends State<Exercise>{
       body:Center(
         child:ListView(
           children: <Widget>[
-            Container(
-              child: Card(
+            Card(
                   child: Column(
                       children: <Widget>[
                         Image.asset('assets/images/flutter2.png'),
@@ -22,9 +21,7 @@ class _ExerciseState extends State<Exercise>{
                       ]
                   )
               ),
-            ),
-            Container(
-              child: Card(
+            Card(
                   child: Column(
                       children: <Widget>[
                         Image.asset('assets/images/flutter2.png'),
@@ -32,9 +29,7 @@ class _ExerciseState extends State<Exercise>{
                       ]
                   )
               ),
-            ),
-            Container(
-              child: Card(
+            Card(
                   child: Column(
                       children: <Widget>[
                         Image.asset('assets/images/flutter2.png'),
@@ -42,9 +37,7 @@ class _ExerciseState extends State<Exercise>{
                       ]
                   )
               ),
-            ),
-            Container(
-              child: Card(
+            Card(
                   child: Column(
                       children: <Widget>[
                         Image.asset('assets/images/flutter2.png'),
@@ -52,9 +45,7 @@ class _ExerciseState extends State<Exercise>{
                       ]
                   )
               ),
-            ),
-            Container(
-              child: Card(
+            Card(
                   child: Column(
                       children: <Widget>[
                         Image.asset('assets/images/flutter2.png'),
@@ -62,9 +53,7 @@ class _ExerciseState extends State<Exercise>{
                       ]
                   )
               ),
-            ),
-            Container(
-              child: Card(
+            Card(
                   child: Column(
                       children: <Widget>[
                         Image.asset('assets/images/flutter2.png'),
@@ -72,9 +61,7 @@ class _ExerciseState extends State<Exercise>{
                       ]
                   )
               ),
-            ),
-            Container(
-              child: Card(
+            Card(
                   child: Column(
                       children: <Widget>[
                         Image.asset('assets/images/flutter2.png'),
@@ -82,9 +69,8 @@ class _ExerciseState extends State<Exercise>{
                       ]
                   )
               ),
-            ),
           ],
-          itemExtent: 185
+          itemExtent: 185,
         ),
       ),
     );
