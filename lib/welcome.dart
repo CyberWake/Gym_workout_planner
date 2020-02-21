@@ -12,6 +12,7 @@ class _WelcomeState extends State<Welcome> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      drawer: Drawer(),
       body: SingleChildScrollView(
         child: Container(
           padding: EdgeInsets.fromLTRB(25, 17, 25, 25),

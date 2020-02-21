@@ -10,6 +10,7 @@ class _ExerciseState extends State<Exercise>{
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue,
+      drawer: Drawer(),
       body:Center(
         child:ListView(
           children: <Widget>[

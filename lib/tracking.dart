@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Dashboard extends StatefulWidget {
   @override
@@ -15,7 +18,7 @@ class _DashboardState extends State<Dashboard> {
       appBar: AppBar(
         elevation: 0,
         titleSpacing: 10,
-        backgroundColor: Colors.white,
+        backgroundColor: Theme.of(context).primaryColor,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
@@ -26,7 +29,7 @@ class _DashboardState extends State<Dashboard> {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(5),
                 child: Image.network(
-                  'https://i.pravatar.cc/100',
+                  "https://avatars2.githubusercontent.com/u/44184786?s=460&v=4",
                 ),
               ),
             ),
@@ -35,7 +38,7 @@ class _DashboardState extends State<Dashboard> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  'Julia Vins',
+                  'CyberWake',
                   style: TextStyle(
                     color: Theme.of(context).accentColor,
                     fontSize: 16,
@@ -43,7 +46,7 @@ class _DashboardState extends State<Dashboard> {
                   ),
                 ),
                 Text(
-                  'Feb 25, 2018',
+                  'Feb 25, 2020',
                   style: TextStyle(
                     color: Theme.of(context).accentColor,
                     fontSize: 12,
@@ -81,7 +84,7 @@ class _DashboardState extends State<Dashboard> {
                     height: 20,
                     child: Center(
                       child: Text(
-                        '03',
+                        '02',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 9,
@@ -94,6 +97,48 @@ class _DashboardState extends State<Dashboard> {
             ),
           )
         ],
+      ),
+      drawer: Drawer(
+          child: Column(
+              children: <Widget>[
+                UserAccountsDrawerHeader(
+                  accountEmail: Text("ritikfbd@gmail.com"),
+                  accountName: Text("Ritik Kumar Srivastava"),
+                  currentAccountPicture: CircleAvatar(
+                    backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/44184786?s=460&v=4"),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 20),
+                ),
+                ListTile(
+                  leading: Icon(MdiIcons.yoga, size: 40),
+                  title: Text("Exercise"),
+                ),
+                ListTile(
+                  leading: Icon(MdiIcons.chartLine, size: 40),
+                  title: Text("Track"),
+                  trailing: Chip(
+                    label: Text("2",style: TextStyle(fontWeight: FontWeight.bold),),
+                    backgroundColor: Theme.of(context).primaryColor,
+                  ),
+                ),
+                ListTile(
+                  leading: FaIcon(FontAwesomeIcons.user, size: 38),
+                  title: Text("Account"),
+                ),
+                Divider(),
+                Expanded(
+                  child: Align(
+                    alignment: FractionalOffset.bottomCenter,
+                    child: ListTile(
+                      leading:FaIcon(FontAwesomeIcons.cog, size: 40),
+                      title: Text("Setting"),
+                    ),
+                  ),
+                )
+              ]
+          )
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -376,6 +421,18 @@ class _DashboardState extends State<Dashboard> {
             ),
           ),
         ),
+      ),
+      bottomNavigationBar: CurvedNavigationBar(
+          backgroundColor: Theme.of(context).primaryColor,
+          index: 0,
+          height: 55,
+          buttonBackgroundColor: Colors.grey,
+          animationDuration: Duration(milliseconds:225),
+          items: <Widget>[
+            Icon(MdiIcons.yoga, size: 30),
+            Icon(MdiIcons.chartLine, size: 30),
+            Icon(MdiIcons.account, size: 30),
+          ]
       ),
     );
   }
