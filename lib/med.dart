@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 
-
-class Me extends StatefulWidget{
+class MeD extends StatefulWidget{
   @override
-  _MeState createState()=> _MeState();
+  _MeDState createState()=> _MeDState();
 }
 
-class _MeState extends State<Me>{
+class _MeDState extends State<MeD>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar:AppBar(
+        elevation: 0,
+        titleSpacing: 10,
+        backgroundColor:Color(0XFF6D3FFF),
+      ),
       backgroundColor: Colors.blue,
       body:Align(
           alignment: Alignment(1.0,-1.0),

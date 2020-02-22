@@ -97,16 +97,20 @@ class StatCard extends StatelessWidget {
     );
   }
 }
-
-class Tracking extends StatefulWidget {
+class TrackingD extends StatefulWidget {
   @override
-  _TrackingState createState() => _TrackingState();
+  _TrackingDState createState() => _TrackingDState();
 }
 
-class _TrackingState extends State<Tracking> {
+class _TrackingDState extends State<TrackingD> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar:AppBar(
+        elevation: 0,
+        titleSpacing: 10,
+        backgroundColor:Color(0XFF6D3FFF),
+      ),
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Padding(
@@ -482,6 +486,3 @@ class _TrackingState extends State<Tracking> {
     );
   }
 }
-
-
-

@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 
-class Exercise extends StatefulWidget{
+class ExerciseD extends StatefulWidget{
   @override
-  _ExerciseState createState()=> _ExerciseState();
+  _ExerciseDState createState()=> _ExerciseDState();
 }
 
-class _ExerciseState extends State<Exercise>{
+class _ExerciseDState extends State<ExerciseD>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      appBar:AppBar(
+        elevation: 0,
+        titleSpacing: 10,
+        backgroundColor:Color(0XFF6D3FFF),
+      ),
       body:Center(
         child:ListView(
           children: <Widget>[
@@ -76,5 +80,3 @@ class _ExerciseState extends State<Exercise>{
     );
   }
 }
-
-
