@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:flutter_app/login_screen.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'exercise.dart';
@@ -35,9 +36,8 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.white,
+    return Scaffold(
+        backgroundColor: Colors.black87,
         bottomNavigationBar: new CurvedNavigationBar(
           index: pageIndex,
           height: 55,
@@ -144,6 +144,7 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
         drawer: Drawer(
+
             child: Column(
                 children: <Widget>[
                   UserAccountsDrawerHeader(
@@ -180,11 +181,14 @@ class _HomePageState extends State<HomePage> {
                     title: Text("Exercise", style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
-                    ),
+                      ),
                     ),
                     onTap: (){
-                      Navigator.pop(context);
-                      Navigator.pushNamed(context, '/exercise');
+                      setState(() {
+                        Navigator.of(context).pop();
+                        pageIndex = 0;
+                        _showPage = _pageChanger(0);
+                      });
                     },
                   ),
                   ListTile(
@@ -203,8 +207,11 @@ class _HomePageState extends State<HomePage> {
                           .accentColor,
                     ),
                     onTap: (){
-                      Navigator.pop(context);
-                      Navigator.pushNamed(context, '/tracking');
+                      setState(() {
+                        Navigator.of(context).pop();
+                        pageIndex = 1;
+                        _showPage = _pageChanger(1);
+                      });
                     },
                   ),
                   ListTile(
@@ -216,8 +223,11 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     onTap: (){
-                      Navigator.pop(context);
-                      Navigator.pushNamed(context, '/me');
+                      setState(() {
+                        Navigator.of(context).pop();
+                        pageIndex = 2;
+                        _showPage = _pageChanger(2);
+                      });
                     },
                   ),
                   Divider(),
@@ -240,12 +250,11 @@ class _HomePageState extends State<HomePage> {
             )
         ),
         body: Container(
-          color: Colors.blueAccent,
+          color: Colors.black87,
           child: Center(
             child: _showPage,
           ),
         ),
-      ),
-    );
+      );
   }
 }

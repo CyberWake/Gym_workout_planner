@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/exercised.dart';
+import 'package:flutter_app/login_screen.dart';
 import 'homepage.dart';
 import 'exercised.dart';
 import 'trackingd.dart';
@@ -9,6 +11,7 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget{
   Widget build(BuildContext context){
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Fitness App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -18,6 +21,7 @@ class MyApp extends StatelessWidget{
       ),
       home: HomePage(),
       routes:{
+        '/homepage':(context) => HomePage(),
         '/exercise':(context) => ExerciseD(),
         '/tracking':(context) => TrackingD(),
         '/me':(context) => MeD(),

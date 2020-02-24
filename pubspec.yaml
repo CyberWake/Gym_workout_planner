@@ -56,6 +56,8 @@ flutter:
     - assets/img/flutter2.png
     - assets/img/flutter.png
     - assets/img/drawer.png
+    - assets/img/facebook.jpg
+    - assets/img/google.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -79,6 +81,9 @@ flutter:
         - asset: assets/fonts/poppins_regular.ttf
         - asset: assets/fonts/poppins_bold.ttf
           weight: 700
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
