@@ -19,8 +19,9 @@ class MyApp extends StatelessWidget{
         accentColor: Color(0XFF233C63),
         fontFamily: 'Poppins',
       ),
-      home: HomePage(),
+      home: LoginScreen(),
       routes:{
+        '/loginpage':(context) => LoginScreen(),
         '/homepage':(context) => HomePage(),
         '/exercise':(context) => ExerciseD(),
         '/tracking':(context) => TrackingD(),

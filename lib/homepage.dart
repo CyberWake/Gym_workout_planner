@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:flutter_app/login_screen.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'exercise.dart';
@@ -31,6 +30,7 @@ class _HomePageState extends State<HomePage> {
       case 2:
         return _me;
         break;
+      default: Text('error');
     }
   }
 
@@ -242,7 +242,7 @@ class _HomePageState extends State<HomePage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        onTap: () => Navigator.of(context).pop(),
+                        onTap: () => Navigator.pushNamed(context, '/loginpage'),
                       ),
                     ),
                   )

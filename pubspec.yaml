@@ -58,7 +58,8 @@ flutter:
     - assets/img/drawer.png
     - assets/img/facebook.jpg
     - assets/img/google.jpg
-
+    - assets/img/full_body.jpg
+    -
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

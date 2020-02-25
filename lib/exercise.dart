@@ -1,5 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'card.dart';
 
 class Exercise extends StatefulWidget{
   @override
@@ -7,218 +8,30 @@ class Exercise extends StatefulWidget{
 }
 
 class _ExerciseState extends State<Exercise>{
-
-  var root = Center(
-    child:ListView(
-      children: <Widget>[
-        Card(
-            elevation: 0,
-            margin: EdgeInsets.all(5.0),
-            color: Colors.black87,
-            child: Column(
-                children: <Widget>[
-                  Container(
-                    height: 150,
-                    decoration: new BoxDecoration(
-                      color: Colors.white, //new Color.fromRGBO(255, 0, 0, 0.0),
-                      borderRadius: new BorderRadius.only(
-                        topLeft:  const  Radius.circular(40.0),
-                        topRight: const  Radius.circular(40.0),
-                        bottomRight: Radius.circular(40.0),
-                        bottomLeft: Radius.circular(40.0),
-                      ),
-                      image:DecorationImage(
-                        fit: BoxFit.cover,
-                        image: NetworkImage('https://simpleactivity435203168.files.wordpress.com/2019/09/flutter-1024x486.png?w=1086'),
-                      ),
-                    ),
-                    child: Center(
-                      child: Text(''),
-                    ),
-                  ),
-                ]
-            )
-        ),
-        Card(
-            elevation: 0,
-            margin: EdgeInsets.all(5.0),
-            color: Colors.black87,
-            child: Column(
-                children: <Widget>[
-                  Container(
-                    height: 150,
-                    decoration: new BoxDecoration(
-                      color: Colors.white, //new Color.fromRGBO(255, 0, 0, 0.0),
-                      borderRadius: new BorderRadius.only(
-                        topLeft:  const  Radius.circular(40.0),
-                        topRight: const  Radius.circular(40.0),
-                        bottomRight: Radius.circular(40.0),
-                        bottomLeft: Radius.circular(40.0),
-                      ),
-                      image:DecorationImage(
-                        fit: BoxFit.cover,
-                        image: NetworkImage('https://simpleactivity435203168.files.wordpress.com/2019/09/flutter-1024x486.png?w=1086'),
-                      ),
-                    ),
-                    child: Center(
-                      child: Text(''),
-                    ),
-                  ),
-                ]
-            )
-        ),
-        Card(
-            elevation: 0,
-            margin: EdgeInsets.all(5.0),
-            color: Colors.black87,
-            child: Column(
-                children: <Widget>[
-                  Container(
-                    height: 150,
-                    decoration: new BoxDecoration(
-                      color: Colors.white, //new Color.fromRGBO(255, 0, 0, 0.0),
-                      borderRadius: new BorderRadius.only(
-                        topLeft:  const  Radius.circular(40.0),
-                        topRight: const  Radius.circular(40.0),
-                        bottomRight: Radius.circular(40.0),
-                        bottomLeft: Radius.circular(40.0),
-                      ),
-                      image:DecorationImage(
-                        fit: BoxFit.cover,
-                        image: NetworkImage('https://simpleactivity435203168.files.wordpress.com/2019/09/flutter-1024x486.png?w=1086'),
-                      ),
-                    ),
-                    child: Center(
-                      child: Text(''),
-                    ),
-                  ),
-                ]
-            )
-        ),
-        Card(
-            elevation: 0,
-            margin: EdgeInsets.all(5.0),
-            color: Colors.black87,
-            child: Column(
-                children: <Widget>[
-                  Container(
-                    height: 150,
-                    decoration: new BoxDecoration(
-                      color: Colors.white, //new Color.fromRGBO(255, 0, 0, 0.0),
-                      borderRadius: new BorderRadius.only(
-                        topLeft:  const  Radius.circular(40.0),
-                        topRight: const  Radius.circular(40.0),
-                        bottomRight: Radius.circular(40.0),
-                        bottomLeft: Radius.circular(40.0),
-                      ),
-                      image:DecorationImage(
-                        fit: BoxFit.cover,
-                        image: NetworkImage('https://simpleactivity435203168.files.wordpress.com/2019/09/flutter-1024x486.png?w=1086'),
-                      ),
-                    ),
-                    child: Center(
-                      child: Text(''),
-                    ),
-                  ),
-                ]
-            )
-        ),
-        Card(
-            elevation: 0,
-            margin: EdgeInsets.all(5.0),
-            color: Colors.black87,
-            child: Column(
-                children: <Widget>[
-                  Container(
-                    height: 150,
-                    decoration: new BoxDecoration(
-                      color: Colors.white, //new Color.fromRGBO(255, 0, 0, 0.0),
-                      borderRadius: new BorderRadius.only(
-                        topLeft:  const  Radius.circular(40.0),
-                        topRight: const  Radius.circular(40.0),
-                        bottomRight: Radius.circular(40.0),
-                        bottomLeft: Radius.circular(40.0),
-                      ),
-                      image:DecorationImage(
-                        fit: BoxFit.cover,
-                        image: NetworkImage('https://simpleactivity435203168.files.wordpress.com/2019/09/flutter-1024x486.png?w=1086'),
-                      ),
-                    ),
-                    child: Center(
-                      child: Text(''),
-                    ),
-                  ),
-                ]
-            )
-        ),
-        Card(
-            elevation: 0,
-            margin: EdgeInsets.all(5.0),
-            color: Colors.black87,
-            child: Column(
-                children: <Widget>[
-                  Container(
-                    height: 150,
-                    decoration: new BoxDecoration(
-                      color: Colors.white, //new Color.fromRGBO(255, 0, 0, 0.0),
-                      borderRadius: new BorderRadius.only(
-                        topLeft:  const  Radius.circular(40.0),
-                        topRight: const  Radius.circular(40.0),
-                        bottomRight: Radius.circular(40.0),
-                        bottomLeft: Radius.circular(40.0),
-                      ),
-                      image:DecorationImage(
-                        fit: BoxFit.cover,
-                        image: NetworkImage('https://simpleactivity435203168.files.wordpress.com/2019/09/flutter-1024x486.png?w=1086'),
-                      ),
-                    ),
-                    child: Center(
-                      child: Text(''),
-                    ),
-                  ),
-                ]
-            )
-        ),
-        Card(
-            elevation: 0,
-            margin: EdgeInsets.all(5.0),
-            color: Colors.black87,
-            child: Column(
-                children: <Widget>[
-                  Container(
-                    height: 150,
-                    decoration: new BoxDecoration(
-                      color: Colors.white, //new Color.fromRGBO(255, 0, 0, 0.0),
-                      borderRadius: new BorderRadius.only(
-                        topLeft:  const  Radius.circular(40.0),
-                        topRight: const  Radius.circular(40.0),
-                        bottomRight: Radius.circular(40.0),
-                        bottomLeft: Radius.circular(40.0),
-                      ),
-                      image:DecorationImage(
-                        fit: BoxFit.cover,
-                        image: NetworkImage('https://simpleactivity435203168.files.wordpress.com/2019/09/flutter-1024x486.png?w=1086'),
-                      ),
-                    ),
-                    child: Center(
-                      child: Text(''),
-                    ),
-                  ),
-                ]
-            )
-        ),
-      ],
-      //itemExtent: 190,
-    ),
-  );
-
-
+  List<String> cardImageUrl=[
+    '',
+    '',
+    '',
+    '',
+    '',
+    '',
+  ];
+  List<String> tileTitle =[
+    'Hello','hi','ritik','danish','ayush','joy'
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.transparent,
-      body:root,
+      body:Center(
+        child:Container(
+          child: ListView.builder(
+            itemBuilder: (_,int index) => CardData(this.tileTitle[index],this.cardImageUrl[index],0,0),
+            itemCount: this.tileTitle.length,
+          ),
+        ),
+      ),
     );
   }
 }
