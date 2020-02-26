@@ -9,15 +9,20 @@ class Exercise extends StatefulWidget{
 
 class _ExerciseState extends State<Exercise>{
   List<String> cardImageUrl=[
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
+    'https://blog.expertsoftwareteam.com/wp-content/uploads/2019/01/flutter12.png',
+    'https://blog.expertsoftwareteam.com/wp-content/uploads/2019/01/flutter12.png',
+    'https://blog.expertsoftwareteam.com/wp-content/uploads/2019/01/flutter12.png',
+    'https://blog.expertsoftwareteam.com/wp-content/uploads/2019/01/flutter12.png',
+    'https://blog.expertsoftwareteam.com/wp-content/uploads/2019/01/flutter12.png',
+    'https://blog.expertsoftwareteam.com/wp-content/uploads/2019/01/flutter12.png',
   ];
   List<String> tileTitle =[
-    'Hello','hi','ritik','danish','ayush','joy'
+    'Hello',
+    'hi',
+    'ritik',
+    'danish',
+    'ayush',
+    'joy'
   ];
 
   @override

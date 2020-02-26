@@ -232,22 +232,36 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Divider(),
                   Expanded(
-                    child: Align(
-                      alignment: FractionalOffset.bottomCenter,
-                      child: ListTile(
-                        leading: FaIcon(FontAwesomeIcons.cog, size: 40),
-                        title: Text("Setting",
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        onTap: () => Navigator.pushNamed(context, '/loginpage'),
+                      child: Column(
+                          children: <Widget>[
+                            Padding(
+                              padding: const EdgeInsets.all(120.0),
+                            ),
+                            ListTile(
+                                leading: FaIcon(FontAwesomeIcons.cog, size: 40),
+                                title: Text("Setting",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                onTap: () => Navigator.pushNamed(context, '/home'),
+                            ),
+                            ListTile(
+                                leading: FaIcon(FontAwesomeIcons.userLock, size: 32),
+                                title: Text("Logout",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                onTap: () => Navigator.pushNamed(context, '/loginpage'),
+                            ),
+                          ],
                       ),
-                    ),
-                  )
-                ]
-            )
+                  ),
+               ]
+            ),
         ),
         body: Container(
           color: Colors.black87,

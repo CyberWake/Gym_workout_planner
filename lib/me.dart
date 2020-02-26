@@ -15,8 +15,8 @@ class _MeState extends State<Me>{
           alignment: Alignment(1.0,-1.0),
           child: Row(
             children: <Widget>[
-              CardData('Ritik','https://simpleactivity435203168.files.wordpress.com/2019/09/flutter-1024x486.png?w=1086',186,205),
-              CardData('Ritik','https://novi.ba/storage/2018/05/29/5b0dc6e0-1400-4511-b0c0-3a5c0a0a0a67-unnamed.jpg',186,205),
+              CardData('Ritik','https://simpleactivity435203168.files.wordpress.com/2019/09/flutter-1024x486.png?w=1086',170,205),
+              CardData('Ritik','https://novi.ba/storage/2018/05/29/5b0dc6e0-1400-4511-b0c0-3a5c0a0a0a67-unnamed.jpg',170,205),
             ],
           ),
       ),
