@@ -230,7 +230,9 @@ class _HomePageState extends State<HomePage> {
                       });
                     },
                   ),
-                  Divider(),
+                  Divider(
+                    thickness: 1,
+                  ),
                   Expanded(
                       child: Column(
                           children: <Widget>[

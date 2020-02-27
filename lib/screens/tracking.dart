@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/widgets/showsteps.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class StatCard extends StatelessWidget {
   final String title;
@@ -10,6 +9,9 @@ class StatCard extends StatelessWidget {
   final double achieved;
   final Image image;
   final Color color;
+  onTap(){
+
+  }
 
   const StatCard({
     Key key,
@@ -97,20 +99,16 @@ class StatCard extends StatelessWidget {
     );
   }
 }
-class TrackingD extends StatefulWidget {
+
+class Tracking extends StatefulWidget {
   @override
-  _TrackingDState createState() => _TrackingDState();
+  _TrackingState createState() => _TrackingState();
 }
 
-class _TrackingDState extends State<TrackingD> {
+class _TrackingState extends State<Tracking> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:AppBar(
-        elevation: 0,
-        titleSpacing: 10,
-        backgroundColor:Color(0XFF6D3FFF),
-      ),
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Padding(
@@ -136,15 +134,7 @@ class _TrackingDState extends State<TrackingD> {
                 Padding(
                   padding: EdgeInsets.only(top: 30),
                 ),
-                Text(
-                  '6522',
-                  style: TextStyle(
-                    color: Theme.of(context).primaryColor,
-                    fontSize: 80,
-                    fontFamily: 'Bebas',
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
+                ShowSteps(6520),
                 Padding(
                   padding: EdgeInsets.only(top: 15),
                 ),
@@ -173,6 +163,8 @@ class _TrackingDState extends State<TrackingD> {
                       LinearPercentIndicator(
                         lineHeight: 8.0,
                         percent: 0.7,
+                        animation: true,
+                        animationDuration: 3000,
                         linearStrokeCap: LinearStrokeCap.roundAll,
                         backgroundColor:
                         Theme.of(context).accentColor.withAlpha(30),
@@ -394,95 +386,9 @@ class _TrackingDState extends State<TrackingD> {
           ),
         ),
       ),
-      drawer: Drawer(
-          child: Column(
-              children: <Widget>[
-                UserAccountsDrawerHeader(
-                  accountEmail:
-                  Text("ritikfbd@gmail.com",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  accountName:
-                  Text("Ritik Kumar Srivastava",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  currentAccountPicture: CircleAvatar(
-                    backgroundImage: NetworkImage("https://avatars2.githubusercontent.com/u/44184786?s=460&v=4"),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 20),
-                ),
-                ListTile(
-                  leading: Icon(MdiIcons.yoga, size: 40),
-                  title: Text("Exercise",style: TextStyle(
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  ),
-                  onTap: (){
-                    Navigator.pop(context);
-                    Navigator.pushNamed(context, '/exercise');
-                  },
-                ),
-                ListTile(
-                  leading: Icon(MdiIcons.chartLine, size: 40),
-                  title:
-                  Text("Track",style: TextStyle(
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  ),
-                  trailing: Chip(
-                    label: Text("2",style: TextStyle(fontWeight: FontWeight.bold),),
-                    backgroundColor: Theme.of(context).primaryColor,
-                  ),
-                  onTap: (){
-                    Navigator.pop(context);
-                    Navigator.pushNamed(context, '/tracking');
-                  },
-                ),
-                ListTile(
-                  leading: FaIcon(FontAwesomeIcons.user, size: 38),
-                  title: Text("Account",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  onTap: (){
-                    Navigator.pop(context);
-                    Navigator.pushNamed(context, '/me');
-                  },
-                ),
-                Divider(),
-                Expanded(
-                  child: Align(
-                    alignment: FractionalOffset.bottomCenter,
-                    child: ListTile(
-                      leading:FaIcon(FontAwesomeIcons.cog, size: 40),
-                      title: Text("Setting",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      onTap: (){
-                        Navigator.pop(context);
-                        Navigator.pushNamed(context, '/welcome');
-                      },
-                    ),
-                  ),
-                )
-              ]
-          )
-      ),
     );
   }
 }
+
+
+

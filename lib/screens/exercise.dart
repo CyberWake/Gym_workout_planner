@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'card.dart';
+import 'package:flutter_app/widgets/card.dart';
 
 class Exercise extends StatefulWidget{
   @override

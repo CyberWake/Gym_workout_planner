@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/exercised.dart';
-import 'package:flutter_app/login_screen.dart';
-import 'homepage.dart';
-import 'exercised.dart';
-import 'trackingd.dart';
-import 'med.dart';
+import 'screens/login_screen.dart';
+import 'screens/homepage.dart';
+import 'screens/exercise.dart';
+import 'screens/tracking.dart';
+import 'screens/me.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,9 +22,9 @@ class MyApp extends StatelessWidget{
       routes:{
         '/loginpage':(context) => LoginScreen(),
         '/homepage':(context) => HomePage(),
-        '/exercise':(context) => ExerciseD(),
-        '/tracking':(context) => TrackingD(),
-        '/me':(context) => MeD(),
+        '/exercise':(context) => Exercise(),
+        '/tracking':(context) => Tracking(),
+        '/me':(context) => Me(),
       },
     );
   }
