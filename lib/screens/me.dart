@@ -19,13 +19,13 @@ class _MeState extends State<Me>{
                   'Ritik',
                   'assets/img/flutter.png',
                   (MediaQuery.of(context).size.width/2)-10,
-                  205
+                  200
               ),
               CardData(
                   'Ritik',
                   'assets/img/flutter.png',
-                  (MediaQuery.of(context).size.width/2)-10
-                  ,205
+                  (MediaQuery.of(context).size.width/2)-10,
+                  200
               ),
             ],
           ),
