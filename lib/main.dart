@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       title: 'Fitness App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.grey,
         primaryColor: Color(0XFF6D3FFF),
         accentColor: Color(0XFF233C63),
         fontFamily: 'Poppins',

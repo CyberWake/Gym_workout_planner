@@ -134,7 +134,9 @@ class _TrackingState extends State<Tracking> {
                 Padding(
                   padding: EdgeInsets.only(top: 30),
                 ),
-                ShowSteps(6520),
+                ShowSteps(
+                  steps: 6567,
+                ),
                 Padding(
                   padding: EdgeInsets.only(top: 15),
                 ),
@@ -164,7 +166,7 @@ class _TrackingState extends State<Tracking> {
                         lineHeight: 8.0,
                         percent: 0.7,
                         animation: true,
-                        animationDuration: 3000,
+                        animationDuration: 3500,
                         linearStrokeCap: LinearStrokeCap.roundAll,
                         backgroundColor:
                         Theme.of(context).accentColor.withAlpha(30),

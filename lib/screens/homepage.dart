@@ -42,7 +42,8 @@ class _HomePageState extends State<HomePage> {
           index: pageIndex,
           height: 55,
           animationDuration: Duration(milliseconds: 225),
-          color: Colors.grey,
+          color: Theme.of(context).primaryColor,
+          backgroundColor: Colors.white,
           items: <Widget>[
             Icon(MdiIcons.yoga, size: 30),
             Icon(MdiIcons.chartLine, size: 30),
@@ -266,7 +267,7 @@ class _HomePageState extends State<HomePage> {
             ),
         ),
         body: Container(
-          color: Colors.black87,
+          color: Colors.white,
           child: Center(
             child: _showPage,
           ),
