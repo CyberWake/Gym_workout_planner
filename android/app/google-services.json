@@ -8,20 +8,41 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1096455985570:android:280d84d3c1cd76450e3afb",
+        "mobilesdk_app_id": "1:1096455985570:android:80914427f01d4c2b0e3afb",
         "android_client_info": {
-          "package_name": "com.example.flutter_app"
+          "package_name": "com.betazeon.ideaevaluator"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1096455985570-lv80abii54u1en83h6f160it9u00fuc8.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.flutter_app",
-            "certificate_hash": "123e625ada7d531df5600aa740d9c85d7ad23eba"
-          }
-        },
+          "client_id": "1096455985570-nsn42dbj5qb7qbshf0o86a262l57v354.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSOJbZXcK5ZterE7Y38wlmWBJFtatPQ5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096455985570-nsn42dbj5qb7qbshf0o86a262l57v354.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096455985570:android:926e402c04555d9b0e3afb",
+        "android_client_info": {
+          "package_name": "com.cyberwake.gymworkoutplanner"
+        }
+      },
+      "oauth_client": [
         {
           "client_id": "1096455985570-nsn42dbj5qb7qbshf0o86a262l57v354.apps.googleusercontent.com",
           "client_type": 3
