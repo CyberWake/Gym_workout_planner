@@ -14,4 +14,4 @@ To get the app build following are the requirements:
 
 | [**Gym Workout Planner App**]() |
 |------------|
-| <center><img src="https://github.com/CyberWake/flutter_app/blob/master/Screenrecorder-2020-08-17-16-01.gif" width="300"></center> |
+| <center><img src="https://github.com/CyberWake/flutter_app/blob/master/Screenrecorder-2020-08-17-16-01%20(5).gif" width="300"></center> |
